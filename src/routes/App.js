@@ -1,15 +1,18 @@
 import React from "react"
-import logo from "../assets/images/logo.svg"
+import Home from "../screens/Home"
+import Login from "../screens/Login"
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom"
 import "../assets/styles/App.css"
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>HOME</p>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path='/admin' component={Login} />
+        <Redirect to='/' />
+      </Switch>
+    </BrowserRouter>
   )
 }
 
