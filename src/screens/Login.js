@@ -4,8 +4,8 @@ const Home = () => {
   return (
     <div className='container'>
       <div className='row'>
-        <div className='col'>1 of 3</div>
-        <div className='col-8'>
+        <div className='col'></div>
+        <div className='col-sm'>
           <div className='card'>
             <div className='card-body'>
               <form>
@@ -17,9 +17,6 @@ const Home = () => {
                     id='exampleInputEmail1'
                     aria-describedby='emailHelp'
                   ></input>
-                  <small id='emailHelp' className='form-text text-muted'>
-                    We'll never share your email with anyone else.
-                  </small>
                 </div>
                 <div className='form-group'>
                   <label htmlFor='exampleInputPassword1'>Password</label>
@@ -46,7 +43,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='col'>3 of 3</div>
+        <div className='col'></div>
       </div>
     </div>
   )
