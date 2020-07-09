@@ -1,12 +1,12 @@
 import { Router } from '@reach/router'
 import React from 'react'
 import '../assets/styles/App.css'
-import HomePage from '../screens/HomePage'
+import SignIn from '../screens/SignIn'
 
 function App() {
   return (
     <Router>
-      <HomePage path='/' />
+      <SignIn path='/' />
     </Router>
   )
 }
