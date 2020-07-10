@@ -5,6 +5,19 @@ import CustomButton from '../components/CustomButton.jsx'
 import AdminLogo from '../assets/images/admin-logo.png'
 import { MediumAndUp, MediumAndDown } from '../utils/breakpoints.jsx'
 
+const SignIn = () => {
+  return (
+    <Section>
+      <MediumAndDown>
+        <SuperFormContainer noBoxShadow />
+      </MediumAndDown>
+      <MediumAndUp>
+        <SuperFormContainer />
+      </MediumAndUp>
+    </Section>
+  )
+}
+
 const SuperFormContainer = ({ noBoxShadow }) => {
   // const [username, setUsername] = useState('')
   // const [email, setEmail] = useState('')
@@ -58,21 +71,6 @@ const SuperFormContainer = ({ noBoxShadow }) => {
         </Form>
       </FormContainer>
     </Container>
-  )
-}
-
-const SignIn = () => {
-  return (
-    <>
-      <Section>
-        <MediumAndDown>
-          <SuperFormContainer noBoxShadow />
-        </MediumAndDown>
-        <MediumAndUp>
-          <SuperFormContainer />
-        </MediumAndUp>
-      </Section>
-    </>
   )
 }
 
