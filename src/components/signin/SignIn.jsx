@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import CustomInput from '../components/CustomInput.jsx'
-import CustomButton from '../components/CustomButton.jsx'
+import CustomInput from '../CustomInput.jsx'
+import CustomButton from '../CustomButton.jsx'
 import AdminLogo from '../assets/images/admin-logo.png'
-import { MediumAndUp, MediumAndDown } from '../utils/breakpoints.jsx'
+import { MediumAndUp, MediumAndDown } from '../../utils/breakpoints.jsx'
 
 const SignIn = () => {
   return (
